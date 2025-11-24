@@ -1,0 +1,14 @@
+### [Admin] Find a user based on attributes
+
+POST {{podUrl}}/pod/v1/admin/user/find
+    ?skip=0
+    &limit=32
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "role": "role36",
+  "feature": "feature36",
+  "status": "ENABLED"
+}

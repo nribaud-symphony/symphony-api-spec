@@ -1,0 +1,12 @@
+### [Admin] Fetch message details
+
+POST {{podUrl}}/pod/v1/admin/messages
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "messageIds": [
+    "messageIds6"
+  ]
+}

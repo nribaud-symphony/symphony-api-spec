@@ -1,0 +1,20 @@
+### Read Events
+
+POST {{agentUrl}}/agent/v5/events/read
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "type": "datahose",
+    "tag": "{{botName}}",
+    "eventTypes": ["MESSAGESENT", "ROOMUPDATED"],
+    "ackId": "{{ackId}}"
+}
+
+{{
+// TODO: Fixup Postman test script
+// var jsonData = JSON.parse(responseBody);
+// pm.collectionVariables.set("ackId", jsonData.ackId);
+}}

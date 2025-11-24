@@ -1,0 +1,5 @@
+### [Admin] Get the disclaimer assigned to a user
+
+GET {{podUrl}}/pod/v1/admin/user/119/disclaimer
+sessionToken: {{sessionToken}}
+Accept: application/json

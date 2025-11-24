@@ -1,0 +1,5 @@
+### [Admin] Get the list of application entitlements for this user
+
+GET {{podUrl}}/pod/v1/admin/user/16/app/entitlement/list
+sessionToken: {{sessionToken}}
+Accept: application/json

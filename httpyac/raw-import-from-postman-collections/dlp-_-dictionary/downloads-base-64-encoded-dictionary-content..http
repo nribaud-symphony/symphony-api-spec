@@ -1,0 +1,7 @@
+### Downloads Base 64 encoded dictionary content.
+
+GET {{agentUrl}}/agent/v1/dlp/dictionaries/dictId31/data/download
+    ?dictVersion=dictVersion31
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: text/plain,application/json

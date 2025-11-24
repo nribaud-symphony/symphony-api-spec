@@ -1,0 +1,10 @@
+### [Admin] Remove a member from a room.
+
+POST {{podUrl}}/pod/v1/admin/room/id6/membership/remove
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 94
+}

@@ -1,0 +1,11 @@
+### Set presence information for a particular user.
+
+POST {{podUrl}}/pod/v3/user/presence
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "category": "category6",
+  "userId": 16
+}

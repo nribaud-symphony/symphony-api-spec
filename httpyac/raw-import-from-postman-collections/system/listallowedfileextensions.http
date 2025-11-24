@@ -1,0 +1,8 @@
+### listAllowedFileExtensions
+
+GET {{podUrl}}/pod/file_ext/v1/allowed_extensions
+    ?limit=100
+    &before=before46
+    &after=after46
+Accept: application/json
+sessionToken: {{sessionToken}}

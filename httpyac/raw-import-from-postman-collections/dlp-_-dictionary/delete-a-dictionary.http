@@ -1,0 +1,8 @@
+### Delete a dictionary
+
+DELETE {{agentUrl}}/agent/v1/dlp/dictionaries/dictId31
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+

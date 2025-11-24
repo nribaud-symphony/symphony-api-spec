@@ -1,0 +1,26 @@
+### Update the attributes of an existing chatroom.
+
+POST {{podUrl}}/pod/v3/room/id6/update
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "name36",
+  "keywords": [
+    {
+      "key": "key36",
+      "value": "value36"
+    }
+  ],
+  "description": "description36",
+  "membersCanInvite": false,
+  "discoverable": false,
+  "public": false,
+  "readOnly": false,
+  "copyProtected": false,
+  "crossPod": false,
+  "viewHistory": false,
+  "multiLateralRoom": false,
+  "subType": "subType36"
+}

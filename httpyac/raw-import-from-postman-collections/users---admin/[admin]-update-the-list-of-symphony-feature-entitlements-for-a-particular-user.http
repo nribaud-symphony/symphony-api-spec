@@ -1,0 +1,13 @@
+### [Admin] Update the list of Symphony feature entitlements for a particular user
+
+POST {{podUrl}}/pod/v1/admin/user/119/features/update
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  {
+    "entitlment": "entitlment36",
+    "enabled": false
+  }
+]

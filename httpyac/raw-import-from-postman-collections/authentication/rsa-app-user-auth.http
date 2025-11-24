@@ -1,0 +1,10 @@
+### RSA App User Auth
+
+POST {{sessionAuthUrl}}/login/pubkey/app/username/yong.tan/authenticate
+Content-Type: application/json
+sessiontoken: {{appToken}}
+
+{{
+// TODO: Fixup Postman test script
+// pm.environment.set("sessionToken", pm.response.json().token);
+}}

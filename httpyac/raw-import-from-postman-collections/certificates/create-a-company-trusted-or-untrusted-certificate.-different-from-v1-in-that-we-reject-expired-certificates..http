@@ -1,0 +1,19 @@
+### Create a company trusted or untrusted certificate. Different from V1 in that we reject expired certificates.
+
+POST {{podUrl}}/pod/v2/companycert/create
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "pem": "pem36",
+  "attributes": {
+    "name": "name36",
+    "type": {
+      "type": "USERSIGNING"
+    },
+    "status": {
+      "type": "TRUSTED"
+    }
+  }
+}

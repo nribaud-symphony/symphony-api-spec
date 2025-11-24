@@ -1,0 +1,10 @@
+### Demotes room owner.
+
+POST {{podUrl}}/pod/v1/room/id6/membership/demoteOwner
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 94
+}

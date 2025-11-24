@@ -1,0 +1,10 @@
+### Adds new member to an existing room.
+
+POST {{podUrl}}/pod/v1/room/id6/membership/add
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 94
+}

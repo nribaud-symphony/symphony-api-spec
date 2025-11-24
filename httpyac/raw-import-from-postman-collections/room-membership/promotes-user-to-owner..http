@@ -1,0 +1,10 @@
+### Promotes user to owner.
+
+POST {{podUrl}}/pod/v1/room/id6/membership/promoteOwner
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 94
+}

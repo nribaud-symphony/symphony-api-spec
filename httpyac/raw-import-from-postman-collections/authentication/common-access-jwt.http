@@ -1,0 +1,12 @@
+### Common Access JWT
+
+POST {{podUrl}}/login/idm/tokens
+    ?scope=
+sessionToken: {{sessionToken}}
+
+{{
+// TODO: Fixup Postman test script
+// var json = pm.response.json();
+// 
+// pm.environment.set("commonJwt",json.access_token );
+}}

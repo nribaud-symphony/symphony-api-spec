@@ -1,0 +1,29 @@
+### [Admin] Partially update the application entitlements for this user
+
+PATCH {{podUrl}}/pod/v1/admin/user/16/app/entitlement/list
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  {
+    "appId": "appId36",
+    "appName": "appName36",
+    "listed": "REMOVE",
+    "install": "TRUE",
+    "products": [
+      {
+        "appId": "appId36",
+        "name": "name36",
+        "sku": "sku36",
+        "subscribed": false,
+        "type": "type36"
+      }
+    ]
+  },
+  {
+    "appId": "appId37",
+    "appName": "appName37",
+    "install": "KEEP"
+  }
+]

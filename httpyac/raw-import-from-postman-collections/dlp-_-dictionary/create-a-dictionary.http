@@ -1,0 +1,12 @@
+### Create a dictionary
+
+POST {{agentUrl}}/agent/v1/dlp/dictionaries
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "name44",
+  "type": "type44"
+}

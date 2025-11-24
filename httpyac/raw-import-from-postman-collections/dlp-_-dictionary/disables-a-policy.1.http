@@ -1,0 +1,8 @@
+### Disables a policy.1
+
+POST {{agentUrl}}/agent/v3/dlp/policies/policyId1/disable
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+

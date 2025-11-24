@@ -1,0 +1,10 @@
+### Accept the connection request for the requesting user
+
+POST {{podUrl}}/pod/v1/connection/accept
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "userId": 16
+}

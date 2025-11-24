@@ -1,0 +1,5 @@
+### [Admin] Get all Information Policies
+
+GET {{podUrl}}/pod/v1/admin/policy/list
+sessionToken: {{sessionToken}}
+Accept: application/json

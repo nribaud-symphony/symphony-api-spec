@@ -1,0 +1,7 @@
+### deleteAllowedFileExtension
+
+DELETE {{podUrl}}/pod/file_ext/v1/allowed_extensions/extension46
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+

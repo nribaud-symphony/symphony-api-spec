@@ -1,0 +1,7 @@
+### List followers
+
+GET {{podUrl}}/pod/v1/user/{{user_id}}/followers
+    ?uid=16
+    &email=email6
+sessionToken: {{sessionToken}}
+Accept: application/json

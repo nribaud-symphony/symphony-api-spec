@@ -1,0 +1,5 @@
+### [Admin] Get the URL of the avatar of a particular user
+
+GET {{podUrl}}/pod/v1/admin/user/119/avatar
+sessionToken: {{sessionToken}}
+Accept: application/json

@@ -1,0 +1,5 @@
+### [Admin] Get the status, active or inactive, for a particular user
+
+GET {{podUrl}}/pod/v1/admin/user/119/status
+sessionToken: {{sessionToken}}
+Accept: application/json

@@ -1,0 +1,6 @@
+### List Datafeed v2
+
+GET {{agentUrl}}/agent/v5/datafeeds/
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

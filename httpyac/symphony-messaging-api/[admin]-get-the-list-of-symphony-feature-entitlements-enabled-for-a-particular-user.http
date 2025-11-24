@@ -1,0 +1,11 @@
+### [Admin] Get the list of Symphony feature entitlements enabled for a particular user
+
+// serviceAccount+ceb-nri-s001+597521186
+@userId=688225559511051
+
+# User Management - List Features
+# @import ./rsa-session-auth.http
+# @ref session
+GET {{podUrl}}/pod/v1/admin/user/{{userId}}/features
+sessionToken: {{session.token}}
+Accept: application/json

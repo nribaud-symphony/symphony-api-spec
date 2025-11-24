@@ -1,0 +1,7 @@
+### Get a list of URI protocols supported by the company (pod)
+
+GET {{podUrl}}/pod/v2/system/protocols
+    ?skip=0
+    &limit=10
+sessionToken: {{sessionToken}}
+Accept: application/json

@@ -1,0 +1,5 @@
+### [Admin] List all disclaimers for the company (pod)
+
+GET {{podUrl}}/pod/v1/admin/disclaimer/list
+sessionToken: {{sessionToken}}
+Accept: application/json

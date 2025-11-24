@@ -1,0 +1,24 @@
+### [Admin] Update the application entitlements for this user
+
+POST {{podUrl}}/pod/v1/admin/user/16/app/entitlement/list
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  {
+    "appId": "appId36",
+    "appName": "appName36",
+    "listed": false,
+    "install": false,
+    "products": [
+      {
+        "appId": "appId36",
+        "name": "name36",
+        "sku": "sku36",
+        "subscribed": false,
+        "type": "type36"
+      }
+    ]
+  }
+]

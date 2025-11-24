@@ -1,0 +1,5 @@
+### Lists current members of an existing room.
+
+GET {{podUrl}}/pod/v2/room/id6/membership/list
+sessionToken: {{sessionToken}}
+Accept: application/json

@@ -1,0 +1,10 @@
+### [Admin] Remove members from an Information Barrier group
+
+POST {{podUrl}}/pod/v1/admin/group/gid6/membership/remove
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  16
+]

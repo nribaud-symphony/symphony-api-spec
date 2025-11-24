@@ -1,0 +1,7 @@
+### Get dictionary metadata
+
+GET {{agentUrl}}/agent/v1/dlp/dictionaries/dictId31
+    ?dictVersion=dictVersion31
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

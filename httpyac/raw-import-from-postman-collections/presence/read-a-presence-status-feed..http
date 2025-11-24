@@ -1,0 +1,5 @@
+### Read a presence status feed.
+
+GET {{podUrl}}/pod/v1/presence/feed/feedId6/read
+sessionToken: {{sessionToken}}
+Accept: application/json

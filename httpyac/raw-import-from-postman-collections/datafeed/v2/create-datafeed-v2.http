@@ -1,0 +1,17 @@
+### Create Datafeed v2
+
+POST {{agentUrl}}/agent/v5/datafeeds
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "tag": "mybot"
+}
+
+{{
+// TODO: Fixup Postman test script
+// pm.environment.set("datafeed_id", pm.response.json().id);
+// pm.environment.set("ack_id", "");
+}}

@@ -1,0 +1,7 @@
+### Return a list of all certificates which were verified to the cert whose
+fingerprint is passed.
+
+
+GET {{podUrl}}/pod/v1/companycert/fingerPrint6/issuedBy
+sessionToken: {{sessionToken}}
+Accept: application/json

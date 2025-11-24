@@ -1,0 +1,5 @@
+### Get presence information about the requesting user.
+
+GET {{podUrl}}/pod/v2/user/presence
+sessionToken: {{sessionToken}}
+Accept: application/json

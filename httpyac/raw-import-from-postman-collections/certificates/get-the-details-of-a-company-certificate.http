@@ -1,0 +1,5 @@
+### Get the details of a company certificate
+
+GET {{podUrl}}/pod/v1/companycert/fingerPrint6/get
+sessionToken: {{sessionToken}}
+Accept: application/json

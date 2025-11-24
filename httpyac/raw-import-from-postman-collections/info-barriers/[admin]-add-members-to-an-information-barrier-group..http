@@ -1,0 +1,10 @@
+### [Admin] Add members to an Information Barrier group.
+
+POST {{podUrl}}/pod/v1/admin/group/gid6/membership/add
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  16
+]

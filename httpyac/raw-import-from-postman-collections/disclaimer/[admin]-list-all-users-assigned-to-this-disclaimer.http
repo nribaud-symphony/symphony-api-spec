@@ -1,0 +1,5 @@
+### [Admin] List all users assigned to this disclaimer
+
+GET {{podUrl}}/pod/v1/admin/disclaimer/did6/users
+sessionToken: {{sessionToken}}
+Accept: application/json

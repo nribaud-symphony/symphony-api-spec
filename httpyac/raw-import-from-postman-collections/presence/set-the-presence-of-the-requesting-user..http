@@ -1,0 +1,10 @@
+### Set the presence of the requesting user.
+
+POST {{podUrl}}/pod/v2/user/presence
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "category": "category6"
+}

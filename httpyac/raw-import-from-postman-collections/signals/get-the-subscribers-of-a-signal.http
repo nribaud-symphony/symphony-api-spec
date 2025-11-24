@@ -1,0 +1,8 @@
+### Get the subscribers of a signal
+
+GET {{agentUrl}}/agent/v1/signals/id31/subscribers
+    ?skip=0
+    &limit=100
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

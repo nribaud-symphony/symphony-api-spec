@@ -1,0 +1,11 @@
+### Delete Datafeed v2
+
+DELETE {{agentUrl}}/agent/v5/datafeeds/{{datafeed_id}}
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+
+{{
+// TODO: Fixup Postman test script
+// pm.environment.unset("datafeed_id")
+}}

@@ -1,0 +1,7 @@
+### Read a given datafeed.
+
+GET {{agentUrl}}/agent/v4/datafeed/id12/read
+    ?limit=32
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

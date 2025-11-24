@@ -1,0 +1,9 @@
+### Get attachments in a particular stream.
+
+GET {{podUrl}}/pod/v1/streams/sid6/attachments
+    ?since=0
+    &to=88888888
+    &limit=32
+    &sortDir=sortDir
+sessionToken: {{sessionToken}}
+Accept: application/json

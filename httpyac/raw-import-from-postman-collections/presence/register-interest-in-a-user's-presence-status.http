@@ -1,0 +1,10 @@
+### Register interest in a user's presence status
+
+POST {{podUrl}}/pod/v1/user/presence/register
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  16
+]

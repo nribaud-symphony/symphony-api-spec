@@ -1,0 +1,16 @@
+### Update a company certificate
+
+POST {{podUrl}}/pod/v1/companycert/fingerPrint6/update
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "name36",
+  "type": {
+    "type": "USERSIGNING"
+  },
+  "status": {
+    "type": "TRUSTED"
+  }
+}

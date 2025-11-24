@@ -1,0 +1,22 @@
+### [Admin] Retrieve all the streams across the enterprise where the membership of the stream has been modified between a given time range
+
+POST {{podUrl}}/pod/v2/admin/streams/list
+    ?skip=16
+    &limit=16
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "streamTypes": [
+    {
+      "type": "type6"
+    }
+  ],
+  "scope": "scope6",
+  "origin": "origin6",
+  "status": "status6",
+  "privacy": "privacy6",
+  "startDate": 16,
+  "endDate": 16
+}

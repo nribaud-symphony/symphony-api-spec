@@ -1,0 +1,43 @@
+### [Admin] Update an existing V2 User
+
+POST {{podUrl}}/pod/v2/admin/user/119/update
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "emailAddress": "emailAddress36",
+  "firstName": "firstName36",
+  "lastName": "lastName36",
+  "userName": "userName36",
+  "displayName": "displayName36",
+  "companyName": "companyName36",
+  "department": "department36",
+  "division": "division36",
+  "title": "title36",
+  "workPhoneNumber": "workPhoneNumber36",
+  "mobilePhoneNumber": "mobilePhoneNumber36",
+  "twoFactorAuthPhone": "twoFactorAuthPhone36",
+  "smsNumber": "smsNumber36",
+  "accountType": "NORMAL",
+  "location": "location36",
+  "recommendedLanguage": "recommendedLanguage36",
+  "jobFunction": "jobFunction36",
+  "assetClasses": [
+    "assetClasses36"
+  ],
+  "industries": [
+    "industries36"
+  ],
+  "currentKey": {
+    "key": "key36",
+    "expirationDate": 94,
+    "action": "action36"
+  },
+  "previousKey": {
+    "key": "key36",
+    "expirationDate": 94,
+    "action": "action36"
+  },
+  "interactionUrl": "interactionUrl36"
+}

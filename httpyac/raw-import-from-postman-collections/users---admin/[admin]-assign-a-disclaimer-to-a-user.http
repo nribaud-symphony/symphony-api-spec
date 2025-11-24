@@ -1,0 +1,10 @@
+### [Admin] Assign a disclaimer to a user
+
+POST {{podUrl}}/pod/v1/admin/user/119/disclaimer/update
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": "id36"
+}

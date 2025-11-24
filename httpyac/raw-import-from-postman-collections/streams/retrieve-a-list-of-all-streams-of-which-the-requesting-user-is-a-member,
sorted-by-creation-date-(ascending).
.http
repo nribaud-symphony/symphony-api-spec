@@ -1,0 +1,19 @@
+### Retrieve a list of all streams of which the requesting user is a member,
+sorted by creation date (ascending).
+
+
+POST {{podUrl}}/pod/v1/streams/list
+    ?skip=16
+    &limit=16
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "streamTypes": [
+    {
+      "type": "MIM"
+    }
+  ],
+  "includeInactiveStreams": false
+}

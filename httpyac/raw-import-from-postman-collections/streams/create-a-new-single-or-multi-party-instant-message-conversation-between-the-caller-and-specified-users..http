@@ -1,0 +1,10 @@
+### Create a new single or multi party instant message conversation between the caller and specified users.
+
+POST {{podUrl}}/pod/v1/im/create
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  16
+]

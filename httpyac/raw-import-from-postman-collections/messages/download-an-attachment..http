@@ -1,0 +1,8 @@
+### Download an attachment.
+
+GET {{agentUrl}}/agent/v1/stream/sid31/attachment
+    ?fileId=fileId31
+    &messageId=messageId31
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: text/plain,application/json

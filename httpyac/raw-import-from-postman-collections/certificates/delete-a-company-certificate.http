@@ -1,0 +1,10 @@
+### Delete a company certificate
+
+POST {{podUrl}}/pod/v1/companycert/delete
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": "id36"
+}

@@ -1,0 +1,10 @@
+### [Admin] Update the status of a particular user
+
+POST {{podUrl}}/pod/v1/admin/user/119/status/update
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "status": "ENABLED"
+}

@@ -1,0 +1,3 @@
+### Health Check Extended
+
+GET {{agentUrl}}/agent/v3/health/extended

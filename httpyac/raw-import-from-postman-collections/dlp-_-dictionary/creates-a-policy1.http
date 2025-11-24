@@ -1,0 +1,64 @@
+### Creates a policy1
+
+POST {{agentUrl}}/agent/v3/dlp/policies
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "name44",
+  "scopes": [
+    "scopes44"
+  ],
+  "appliesTo": [
+    {
+      "dataType": "dataType44",
+      "action": "action44",
+      "rules": [
+        {
+          "type": "type44",
+          "name": "name44",
+          "textMatchConfig": {
+            "dictionaries": [
+              {
+                "dictId": "dictId44",
+                "version": "version44",
+                "name": "name44"
+              }
+            ],
+            "countUniqueOccurrences": 114,
+            "applicableFileTypes": [
+              "applicableFileTypes44"
+            ]
+          },
+          "fileSizeConfig": {
+            "sizeLimit": 114
+          },
+          "fileExtensionConfig": {
+            "allowLists": [
+              "allowLists44"
+            ],
+            "blockLists": [
+              "blockLists44"
+            ]
+          },
+          "filePasswordConfig": {
+            "applicableFileTypes": [
+              "applicableFileTypes44"
+            ],
+            "matchCriteria": "matchCriteria44"
+          },
+          "fileClassifierConfig": {
+            "classifiers": {
+              "key1": "classifiers44"
+            },
+            "applicableFileTypes": [
+              "applicableFileTypes44"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

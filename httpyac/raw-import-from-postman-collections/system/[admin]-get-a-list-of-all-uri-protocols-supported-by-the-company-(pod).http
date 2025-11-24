@@ -1,0 +1,5 @@
+### [Admin] Get a list of all URI protocols supported by the company (pod)
+
+GET {{podUrl}}/pod/v1/admin/system/protocols/list
+sessionToken: {{sessionToken}}
+Accept: application/json

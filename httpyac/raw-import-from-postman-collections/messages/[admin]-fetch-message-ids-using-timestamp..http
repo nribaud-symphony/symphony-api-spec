@@ -1,0 +1,9 @@
+### [Admin] Fetch message ids using timestamp.
+
+GET {{podUrl}}/pod/v2/admin/streams/streamId46/messageIds
+    ?since=119
+    &to=119
+    &limit=119
+    &offset=119
+sessionToken: {{sessionToken}}
+Accept: application/json

@@ -1,0 +1,24 @@
+### Read Datafeed v2
+
+{{
+// TODO: Fixup Postman pre-request script
+// if (!pm.environment.get("ack_id")) {
+//    pm.environment.set("ack_id", "")
+//}
+}}
+
+POST {{agentUrl}}/agent/v5/datafeeds/{{datafeed_id}}/read
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "ackId": "{{ack_id}}"
+}
+
+{{
+// TODO: Fixup Postman test script
+// // update ack id for next read
+// pm.environment.set("ack_id", pm.response.json().ackId);
+}}

@@ -1,0 +1,10 @@
+### Removes member from an existing room.
+
+POST {{podUrl}}/pod/v1/room/id6/membership/remove
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 94
+}

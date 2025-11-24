@@ -1,0 +1,4 @@
+### Session Info
+
+GET {{podUrl}}/pod/v2/sessioninfo
+sessionToken: {{sessionToken}}

@@ -1,0 +1,8 @@
+### Create a new real time message event stream. Copy
+
+POST {{agentUrl}}/agent/v4/datafeed/create
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+

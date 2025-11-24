@@ -1,0 +1,14 @@
+### List all certs of the given types
+
+POST {{podUrl}}/pod/v1/companycert/type/list
+    ?skip=16
+    &limit=16
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  {
+    "type": "USERSIGNING"
+  }
+]

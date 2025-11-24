@@ -1,0 +1,24 @@
+### [Admin] Create a new app
+
+POST {{podUrl}}/pod/v1/admin/app/create
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "applicationInfo": {
+        "appId": "appId6",
+        "name": "name6",
+        "appUrl": "https://appUrl6",
+        "domain": "appUrl6",
+        "publisher": "publisher6"
+    },
+    "iconUrl": "https://iconUrl6",
+    "description": "description6",
+    "allowOrigins": "allowOrigins6",
+    "authenticationKeys": {
+        "current": {
+            "key": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAw7pR1tx76ky8z22H/eTx\nmLrhY853RsHVXndZH/W5tsWLIL4vEDQZbRHoQNbJmxYjDpUPSfbKeAH+6AXVIZNi\n6ZjhPqJhZLLupIUm5UX2qucX6VU8sv9P58dOJTn7Lyn1fFL/7o9DxLjuxRil23X9\nazujQh4CumDeg7PoBTuVN0dWRHMvsHbmW5l7O1lEvbLa3daEoa8/utmIdUxknhyl\naB+6636sV16xiZSsS/+j08HcAuBUeBRk+Ir3vw5dMY6oZa+lrxePqbCJjfc3ZjJa\nHqNkIoIEXfRcPjmi9pZGxZiIp8ZFJLFtLdY812w2NxCgYTz7ZItnALgCaAQGgt1m\nG4NXYvd5SbSWWX1F\nP19Rsj0obnAU2lu4F54Hlzs2WdanaznNICfDN1kNRynCfCJ\nGC0QwuExGAubertjMqOTN4m0jrD+0qxGA6nFcEQHYMYQSZVOZn45n9gfuzgueOrB\nOgfj6GQ3iMaOoh++8D/Fu5H1DBSsaMPL8WHAR74Pq1Ipr\nst/jj4J2/OG/9b1gC+\nP2IR7AakXOXjOoWVcaWo8ke17kf6s3GtNhzdJMP4/9rYfWA2JcMEZseZsP2CHTsW\nKrqR5YzwRlUnwch0njOHkAkzE72VpME7ZwZgjL9Aez1UOxBislztox5GOUAS7R3q\nK7RVcJURBoevlOp6n4YoPp0CAwEAAQ==\n-----END PUBLIC KEY-----"
+        }
+    }
+}

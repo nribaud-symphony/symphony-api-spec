@@ -1,0 +1,6 @@
+### Get a message by ID
+
+GET {{agentUrl}}/agent/v1/message/id
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

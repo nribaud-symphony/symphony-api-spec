@@ -1,0 +1,5 @@
+### [Admin] Get an app
+
+GET {{podUrl}}/pod/v1/admin/app/id46/get
+sessionToken: {{sessionToken}}
+Accept: application/json

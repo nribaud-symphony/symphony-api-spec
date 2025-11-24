@@ -1,0 +1,9 @@
+### Get user information
+
+GET {{podUrl}}/pod/v2/user
+    ?uid=16
+    &email=email6
+    &username=admin
+    &local=true
+sessionToken: {{sessionToken}}
+Accept: application/json

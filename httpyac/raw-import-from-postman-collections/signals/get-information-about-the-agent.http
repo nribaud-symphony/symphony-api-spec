@@ -1,0 +1,4 @@
+### Get information about the Agent
+
+GET {{agentUrl}}/agent/v1/info
+Accept: application/json

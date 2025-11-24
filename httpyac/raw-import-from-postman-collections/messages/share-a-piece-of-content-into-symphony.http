@@ -1,0 +1,26 @@
+### Share a piece of content into Symphony
+
+POST {{agentUrl}}/agent/v3/stream/sid31/share
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "type": "type74",
+  "content": {
+    "articleId": "articleId74",
+    "title": "title74",
+    "subTitle": "subTitle74",
+    "message": "message74",
+    "publisher": "publisher74",
+    "publishDate": 192,
+    "thumbnailUrl": "thumbnailUrl74",
+    "author": "author74",
+    "articleUrl": "articleUrl74",
+    "summary": "summary74",
+    "appId": "appId74",
+    "appName": "appName74",
+    "appIconUrl": "appIconUrl74"
+  }
+}

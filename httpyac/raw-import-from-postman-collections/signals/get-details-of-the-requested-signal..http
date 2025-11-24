@@ -1,0 +1,6 @@
+### Get details of the requested signal.
+
+GET {{agentUrl}}/agent/v1/signals/id31/get
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

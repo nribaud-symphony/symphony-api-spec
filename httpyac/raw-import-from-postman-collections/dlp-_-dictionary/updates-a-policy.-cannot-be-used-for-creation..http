@@ -1,0 +1,87 @@
+### Updates a policy. Cannot be used for creation.
+
+PUT {{agentUrl}}/agent/v1/dlp/policies/policyId31
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "contentTypes": [
+    "contentTypes44"
+  ],
+  "dictionaryIds": [
+    "dictionaryIds44"
+  ],
+  "name": "name44",
+  "scopes": [
+    "scopes44"
+  ],
+  "type": "type44"
+}
+
+
+### Updates a policy. Cannot be used for creation.
+
+POST {{agentUrl}}/agent/v3/dlp/policies/policyId31/update
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "name44",
+  "scopes": [
+    "scopes44"
+  ],
+  "appliesTo": [
+    {
+      "dataType": "dataType44",
+      "action": "action44",
+      "rules": [
+        {
+          "type": "type44",
+          "name": "name44",
+          "textMatchConfig": {
+            "dictionaries": [
+              {
+                "dictId": "dictId44",
+                "version": "version44",
+                "name": "name44"
+              }
+            ],
+            "countUniqueOccurrences": 114,
+            "applicableFileTypes": [
+              "applicableFileTypes44"
+            ]
+          },
+          "fileSizeConfig": {
+            "sizeLimit": 114
+          },
+          "fileExtensionConfig": {
+            "allowLists": [
+              "allowLists44"
+            ],
+            "blockLists": [
+              "blockLists44"
+            ]
+          },
+          "filePasswordConfig": {
+            "applicableFileTypes": [
+              "applicableFileTypes44"
+            ],
+            "matchCriteria": "matchCriteria44"
+          },
+          "fileClassifierConfig": {
+            "classifiers": {
+              "key1": "classifiers44"
+            },
+            "applicableFileTypes": [
+              "applicableFileTypes44"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

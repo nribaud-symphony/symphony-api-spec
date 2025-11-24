@@ -1,0 +1,5 @@
+### [Admin] Get the list of userids in this Information Barrier Group
+
+GET {{podUrl}}/pod/v1/admin/group/gid6/membership/list
+sessionToken: {{sessionToken}}
+Accept: application/json

@@ -1,0 +1,7 @@
+### Get presence information about all company (pod) users.
+
+GET {{podUrl}}/pod/v2/users/presence
+    ?lastUserId=16
+    &limit=16
+sessionToken: {{sessionToken}}
+Accept: application/json

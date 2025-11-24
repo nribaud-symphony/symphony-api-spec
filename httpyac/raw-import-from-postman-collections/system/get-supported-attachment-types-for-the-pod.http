@@ -1,0 +1,5 @@
+### Get supported attachment types for the pod
+
+GET {{podUrl}}/pod/v1/files/allowedTypes
+sessionToken: {{sessionToken}}
+Accept: application/json

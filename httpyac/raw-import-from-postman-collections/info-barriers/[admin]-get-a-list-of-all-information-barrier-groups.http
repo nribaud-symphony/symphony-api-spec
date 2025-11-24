@@ -1,0 +1,5 @@
+### [Admin] Get a list of all Information Barrier Groups
+
+GET {{podUrl}}/pod/v1/admin/group/list
+sessionToken: {{sessionToken}}
+Accept: application/json

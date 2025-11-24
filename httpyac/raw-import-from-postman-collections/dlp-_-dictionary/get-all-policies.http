@@ -1,0 +1,8 @@
+### Get all policies
+
+GET {{agentUrl}}/agent/v1/dlp/policies
+    ?page=81
+    &limit=81
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

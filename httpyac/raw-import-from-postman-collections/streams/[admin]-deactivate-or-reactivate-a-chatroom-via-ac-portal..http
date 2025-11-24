@@ -1,0 +1,8 @@
+### [Admin] Deactivate or reactivate a chatroom via AC Portal.
+
+POST {{podUrl}}/pod/v1/admin/room/id6/setActive
+    ?active=false
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+

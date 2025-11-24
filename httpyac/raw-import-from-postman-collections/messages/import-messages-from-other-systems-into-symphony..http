@@ -1,0 +1,19 @@
+### Import messages from other systems into Symphony.
+
+POST {{agentUrl}}/agent/v4/message/import
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  {
+    "message": "message74",
+    "data": "data74",
+    "intendedMessageTimestamp": 192,
+    "intendedMessageFromUserId": 192,
+    "originatingSystemId": "originatingSystemId74",
+    "originalMessageId": "originalMessageId74",
+    "streamId": "streamId74"
+  }
+]

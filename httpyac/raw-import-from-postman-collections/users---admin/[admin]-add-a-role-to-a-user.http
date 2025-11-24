@@ -1,0 +1,10 @@
+### [Admin] Add a role to a user
+
+POST {{podUrl}}/pod/v1/admin/user/16/roles/add
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": "id36"
+}

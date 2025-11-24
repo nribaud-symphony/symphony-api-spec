@@ -1,0 +1,5 @@
+### Get information about a partcular chatroom.
+
+GET {{podUrl}}/pod/v3/room/id6/info
+sessionToken: {{sessionToken}}
+Accept: application/json

@@ -1,0 +1,23 @@
+{{
+    /*
+     * Read pmp-cli jwt/authorization
+     * 
+     * pmp-cli -e <env> auth login
+     * --> writes jwt/authorization to ~/.symphony/pmp.yaml
+     */
+
+    // console.log(process.env.HOME)
+
+    const fs = require('node:fs');
+    const YAML = require('yaml');
+
+    try {
+    const dataYaml = fs.readFileSync('/home/nicolas.ribaud/.symphony/pmp.yaml', 'utf8');
+    console.log(dataYaml)
+    const dataJson = YAML.parse(dataYaml)
+    console.log(dataJson)
+    exports.pmp_authorizations_per_environment=dataJson;
+    } catch (err) {
+    console.error(err);
+    }
+}}

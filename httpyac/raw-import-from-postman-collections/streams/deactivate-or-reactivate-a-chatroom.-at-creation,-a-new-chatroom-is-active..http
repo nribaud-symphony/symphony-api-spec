@@ -1,0 +1,8 @@
+### Deactivate or reactivate a chatroom. At creation, a new chatroom is active.
+
+POST {{podUrl}}/pod/v1/room/id6/setActive
+    ?active=false
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+

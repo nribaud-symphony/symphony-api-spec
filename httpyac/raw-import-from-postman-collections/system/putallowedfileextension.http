@@ -1,0 +1,13 @@
+### putAllowedFileExtension
+
+PUT {{podUrl}}/pod/file_ext/v1/allowed_extensions/extension46
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "extension": ".txt",
+  "scope_internal": false,
+  "scope_external": false,
+  "source": "SYSTEM"
+}

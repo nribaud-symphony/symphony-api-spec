@@ -1,0 +1,19 @@
+### Delete a policy
+
+DELETE {{agentUrl}}/agent/v1/dlp/policies/policyId31
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+
+
+
+### Delete a policy
+
+POST {{agentUrl}}/agent/v3/dlp/policies/policyId31/delete
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+

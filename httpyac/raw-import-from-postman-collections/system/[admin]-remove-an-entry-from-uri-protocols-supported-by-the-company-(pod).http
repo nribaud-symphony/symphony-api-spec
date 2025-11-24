@@ -1,0 +1,7 @@
+### [Admin] Remove an entry from URI protocols supported by the company (pod)
+
+DELETE {{podUrl}}/pod/v1/admin/system/protocols/scheme46
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+

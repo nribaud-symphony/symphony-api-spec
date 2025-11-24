@@ -1,0 +1,8 @@
+### Get all dictionary metadatas
+
+GET {{agentUrl}}/agent/v1/dlp/dictionaries
+    ?page=81
+    &limit=81
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

@@ -1,0 +1,5 @@
+### [Admin] Retrieve V2 User details for a particular user
+
+GET {{podUrl}}/pod/v2/admin/user/119
+sessionToken: {{sessionToken}}
+Accept: application/json

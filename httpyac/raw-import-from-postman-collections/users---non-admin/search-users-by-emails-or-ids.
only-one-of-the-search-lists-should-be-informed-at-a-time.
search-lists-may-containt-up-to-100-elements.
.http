@@ -1,0 +1,12 @@
+### Search users by emails or ids.
+Only one of the search lists should be informed at a time.
+Search lists may containt up to 100 elements.
+
+
+GET {{podUrl}}/pod/v3/users
+    ?uid=uid6
+    &email=email6
+    &username=username6
+    &local=false
+sessionToken: {{sessionToken}}
+Accept: application/json

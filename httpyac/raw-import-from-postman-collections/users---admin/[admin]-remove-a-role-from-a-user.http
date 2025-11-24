@@ -1,0 +1,10 @@
+### [Admin] Remove a role from a user
+
+POST {{podUrl}}/pod/v1/admin/user/119/roles/remove
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": "id36"
+}

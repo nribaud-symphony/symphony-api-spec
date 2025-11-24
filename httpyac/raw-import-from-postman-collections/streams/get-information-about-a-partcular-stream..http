@@ -1,0 +1,5 @@
+### Get information about a partcular stream.
+
+GET {{podUrl}}/pod/v2/streams/sid6/info
+sessionToken: {{sessionToken}}
+Accept: application/json

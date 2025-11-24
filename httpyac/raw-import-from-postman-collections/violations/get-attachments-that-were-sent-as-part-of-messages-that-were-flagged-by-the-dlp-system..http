@@ -1,0 +1,8 @@
+### Get attachments that were sent as part of messages that were flagged by the DLP System.
+
+GET {{agentUrl}}/agent/v3/dlp/violation/attachment
+    ?fileId=fileId1
+    &violationId=violationId1
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: text/plain,application/json

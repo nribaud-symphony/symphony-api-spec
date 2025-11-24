@@ -1,0 +1,10 @@
+### Echo
+
+POST {{agentUrl}}/agent/v1/util/echo
+Content-Type: application/json
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+
+{
+  "message": "Hello World"
+}

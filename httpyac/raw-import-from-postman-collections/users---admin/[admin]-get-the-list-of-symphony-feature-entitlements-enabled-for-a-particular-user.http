@@ -1,0 +1,5 @@
+### [Admin] Get the list of Symphony feature entitlements enabled for a particular user
+
+GET {{podUrl}}/pod/v1/admin/user/119/features
+sessionToken: {{sessionToken}}
+Accept: application/json

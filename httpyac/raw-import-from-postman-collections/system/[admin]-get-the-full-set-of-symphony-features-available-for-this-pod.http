@@ -1,0 +1,5 @@
+### [Admin] Get the full set of Symphony features available for this pod
+
+GET {{podUrl}}/pod/v1/admin/system/features/list
+sessionToken: {{sessionToken}}
+Accept: application/json

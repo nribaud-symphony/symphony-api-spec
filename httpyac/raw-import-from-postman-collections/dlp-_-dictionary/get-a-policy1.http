@@ -1,0 +1,7 @@
+### Get a policy1
+
+GET {{agentUrl}}/agent/v3/dlp/policies/policyId31
+    ?policyVersion=policyVersion31
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

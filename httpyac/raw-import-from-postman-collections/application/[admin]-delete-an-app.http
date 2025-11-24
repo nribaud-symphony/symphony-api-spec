@@ -1,0 +1,7 @@
+### [Admin] Delete an app
+
+POST {{podUrl}}/pod/v1/admin/app/id46/delete
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+

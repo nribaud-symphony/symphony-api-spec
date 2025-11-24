@@ -1,0 +1,7 @@
+### Create Presence status feed.
+
+POST {{podUrl}}/pod/v1/presence/feed/create
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+

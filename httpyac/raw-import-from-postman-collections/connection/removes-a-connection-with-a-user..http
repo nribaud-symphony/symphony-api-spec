@@ -1,0 +1,7 @@
+### Removes a connection with a user.
+
+POST {{podUrl}}/pod/v1/connection/user/16/remove
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+

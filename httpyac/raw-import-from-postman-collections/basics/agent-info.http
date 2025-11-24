@@ -1,0 +1,3 @@
+### Agent Info
+
+GET {{agentUrl}}/agent/v1/info

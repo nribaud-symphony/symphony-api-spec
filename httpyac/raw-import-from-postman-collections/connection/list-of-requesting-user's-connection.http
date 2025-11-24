@@ -1,0 +1,23 @@
+### List of requesting user's connection
+
+GET {{podUrl}}/pod/v1/connection/list
+    ?status=ALL
+    &userIds=userIds6
+sessionToken: {{sessionToken}}
+Accept: application/json
+
+{{
+// TODO: Fixup Postman test script
+// /*
+// pm.response.json().forEach(u => {
+//     pm.sendRequest({
+//         url: `https://preview.symphony.com/pod/v3/users?uid=${u.userId}&local=false`,
+//         method: 'GET',
+//         header: { 'sessionToken': 'eyJhbGciOiJSUzUxMiJ9.eyJzdWIiOiJpbm5vdmF0ZSIsImlzcyI6InN5bXBob255Iiwic2Vzc2lvbklkIjoiMGU3Mzg1MWZlNzQ0NWNkN2JlNDA1NzIyNmMyYmRjZDgzMzNjNzE0OTY2ZDJmMDIzZmRlZDExYTRlZDUyOWE0MmU0NTAwM2FlN2UwYjJiMmMxNTRjMTc5NmMzOGI5NWJkMDAwMDAxNmRhZjZmYjhmNTAwMDA0MDAwMDAwMDAyZTYiLCJ1c2VySWQiOiI3MDM2ODc0NDE3ODQwNiJ9.kpX7ZCrvYmAWcGmom0kvWR6jCvMqQmxL6IQCFjBUcQpfw4E4eXrU1I2ouA76s-7sGcegKSo6wcdLKh0mBnHah7_DcTl5eqvdF6z5bp8_ZlqOu6Bjgd7ilG9Cz7OQLVmr0U1aIcH7rsDHB_A6itPl_KuV-8M5DhyOpAsjGqFFSomq2S8NRMAXkoV8ucG_jOpZiEPUCvFhkwoaEbZyBTPkphziarPTeOFVJFbvDs2KgXUSI6BT_ypJQbFHe-t5jfclxhflz4y5ZLGiqA0FiBwb6loNEOevY1hzy3xAMYkUUY994u9HMe6E2zTGfD1364YYBECeIx3SaNIg2cxbY0kT9w' }
+//     }, (err, res) => {
+//         const x = res.json().users[0];
+//         console.log(u.userId + "|" + u.status + "|" + u.updatedAt + "|" + x.company + "|" + x.displayName + "|" + x.emailAddress + "|" + x.location)
+//     });
+// })
+// */
+}}

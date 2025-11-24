@@ -1,0 +1,7 @@
+### List all trusted certs1
+
+GET {{podUrl}}/pod/v1/companycert/podmanaged/list
+    ?skip=16
+    &limit=16
+sessionToken: {{sessionToken}}
+Accept: application/json

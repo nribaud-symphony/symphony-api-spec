@@ -1,0 +1,21 @@
+### Creates a policy
+
+POST {{agentUrl}}/agent/v1/dlp/policies
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "contentTypes": [
+    "contentTypes44"
+  ],
+  "dictionaryIds": [
+    "dictionaryIds44"
+  ],
+  "name": "name44",
+  "scopes": [
+    "scopes44"
+  ],
+  "type": "type44"
+}

@@ -1,0 +1,11 @@
+### Cert Session Auth
+
+POST {{certSessionAuthUrl}}/sessionauth/v1/authenticate
+Content-Type: application/json
+
+{"token":"{{jwt}}"}
+
+{{
+// TODO: Fixup Postman test script
+// pm.environment.set("sessionToken", pm.response.json().token);
+}}

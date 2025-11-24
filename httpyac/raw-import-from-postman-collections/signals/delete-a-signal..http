@@ -1,0 +1,8 @@
+### Delete a signal.
+
+POST {{agentUrl}}/agent/v1/signals/id31/delete
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+

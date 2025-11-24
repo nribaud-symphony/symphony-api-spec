@@ -1,0 +1,7 @@
+### [Admin] Retrieve a list of all users in the company (pod)
+
+GET {{podUrl}}/pod/v2/admin/user/list
+    ?skip=0
+    &limit=32
+sessionToken: {{sessionToken}}
+Accept: application/json

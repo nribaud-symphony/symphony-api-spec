@@ -1,0 +1,65 @@
+{{
+/* Dependencies:
+ * - crypto is a built-in NodeJS module
+ * - jsencrypt: https://github.com/travist/jsencrypt
+ *
+ * JWT generation code extracted and adapted from
+ * https://docs.developers.symphony.com/bots/authentication/rsa-authentication#id-3.-generate-a-signed-jwt-token
+ *
+ */
+const JSEncrypt = require('jsencrypt');
+const crypto = require('crypto');
+// const read_file = require('../read-file.http');
+const fs = require('node:fs');
+const path = require('path');
+
+const jse = new JSEncrypt();
+
+function base64urlEncode(str) {
+   return new Buffer(str).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, '');
+}
+function Jwt(username, signingKey) {
+   this.header = { typ: 'JWT', alg: 'RS512' };
+   this.body = {
+       sub: username,
+       exp: (Math.floor(new Date().getTime() / 1000) + (5 * 60))
+   };
+   this.signingKey = signingKey;
+   return this;
+}
+Jwt.prototype.sign = function sign(payload, cryptoInput) {
+   jse.setPrivateKey(cryptoInput);
+   let buffer = crypto.createSign('RSA-SHA512').update(payload).sign(cryptoInput);
+   return base64urlEncode(buffer);
+};
+Jwt.prototype.compact = function compact() {
+   let segments = [];
+   segments.push(base64urlEncode(JSON.stringify(this.header)));
+   segments.push(base64urlEncode(JSON.stringify(this.body)));
+   this.signature = this.sign(segments.join('.'), this.signingKey);
+   segments.push(this.signature);
+   return segments.join('.');
+};
+
+console.log(process.env.HOME)
+
+const vars = $httpyac.context.variables;
+
+const username = vars.botName
+const userPrivateKeyFile = process.env.HOME + "/.ssh/symphony-api-spec.keys/" + vars.botKey
+
+// const privateKey = fs.readFileSync(path.resolve( __dirname, "../.sym_rsa_key/mykey.pem"), 'utf8')
+// const privateKey = fs.readFileSync("~/.sym_rsa_key/mykey.pem", 'utf8')
+const privateKey = fs.readFileSync(userPrivateKeyFile, 'utf8')
+
+
+console.log("privateKey="+privateKey)
+
+// const jwt = new Jwt(vars.botName, vars.botKey);
+const jwt = new Jwt(vars.botName, privateKey);
+const jws = jwt.compact();
+
+exports.jwt = jws
+
+console.log("jwt="+jws)
+}}

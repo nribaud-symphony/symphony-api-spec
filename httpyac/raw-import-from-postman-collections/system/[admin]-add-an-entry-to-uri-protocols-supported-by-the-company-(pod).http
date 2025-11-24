@@ -1,0 +1,10 @@
+### [Admin] Add an entry to URI protocols supported by the company (pod)
+
+POST {{podUrl}}/pod/v1/admin/system/protocols
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "scheme": "scheme6"
+}

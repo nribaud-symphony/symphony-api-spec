@@ -1,0 +1,7 @@
+### [Admin] Fetch receipts details from a specific message.
+
+GET {{podUrl}}/pod/v1/admin/messages/messageId46/receipts
+    ?before=before46
+    &after=after46
+sessionToken: {{sessionToken}}
+Accept: application/json

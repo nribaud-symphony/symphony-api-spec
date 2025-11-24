@@ -1,0 +1,10 @@
+### Reject the connection request for the requesting user.
+
+POST {{podUrl}}/pod/v1/connection/reject
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "userId": 16
+}

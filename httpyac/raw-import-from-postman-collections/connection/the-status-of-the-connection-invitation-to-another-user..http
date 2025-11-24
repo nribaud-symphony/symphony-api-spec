@@ -1,0 +1,5 @@
+### The status of the connection invitation to another user.
+
+GET {{podUrl}}/pod/v1/connection/user/userId6/info
+sessionToken: {{sessionToken}}
+Accept: application/json

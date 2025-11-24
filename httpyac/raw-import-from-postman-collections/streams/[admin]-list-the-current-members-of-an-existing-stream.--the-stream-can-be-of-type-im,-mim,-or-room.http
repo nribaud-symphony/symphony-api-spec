@@ -1,0 +1,7 @@
+### [Admin] List the current members of an existing stream.  The stream can be of type IM, MIM, or ROOM
+
+GET {{podUrl}}/pod/v1/admin/stream/id6/membership/list
+    ?skip=0
+    &limit=32
+sessionToken: {{sessionToken}}
+Accept: application/json

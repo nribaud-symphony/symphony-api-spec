@@ -1,0 +1,14 @@
+### Create a signal.
+
+POST {{agentUrl}}/agent/v1/signals/create
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "name44",
+  "query": "query44",
+  "visibleOnProfile": false,
+  "companyWide": false
+}

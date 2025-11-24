@@ -1,0 +1,5 @@
+### Get the read status of a particular message.
+
+GET {{podUrl}}/pod/v1/message/mid46/status
+sessionToken: {{sessionToken}}
+Accept: application/json

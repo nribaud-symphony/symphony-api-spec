@@ -1,0 +1,6 @@
+### Get presence information about a particular user.
+
+GET {{podUrl}}/pod/v3/user/16/presence
+    ?local=false
+sessionToken: {{sessionToken}}
+Accept: application/json

@@ -1,0 +1,9 @@
+### Get messages from an existing stream.
+
+GET {{agentUrl}}/agent/v4/stream/sid/message
+    ?since=0
+    &skip=0
+    &limit=32
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

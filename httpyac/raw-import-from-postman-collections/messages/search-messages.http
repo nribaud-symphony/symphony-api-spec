@@ -1,0 +1,37 @@
+### Search messages
+
+GET {{agentUrl}}/agent/v1/message/search
+    ?query=query
+    &skip=0
+    &limit=32
+    &scope=scope
+    &sortDir=sortDir
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+
+
+### Search messages
+
+POST {{agentUrl}}/agent/v1/message/search
+    ?skip=0
+    &limit=32
+    &scope=scope
+    &sortDir=sortDir
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "text": "text74",
+  "streamId": "streamId74",
+  "streamType": "streamType74",
+  "author": 192,
+  "hashtag": "hashtag74",
+  "cashtag": "cashtag74",
+  "mention": 192,
+  "signal": "signal74",
+  "fromDate": 192,
+  "toDate": 192
+}

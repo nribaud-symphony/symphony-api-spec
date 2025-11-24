@@ -1,0 +1,6 @@
+### [Admin] Lists current and previous members of an existing room.
+
+GET {{podUrl}}/pod/v1/admin/room/id6/membership/list
+    ?includePastMembers=false
+sessionToken: {{sessionToken}}
+Accept: application/json

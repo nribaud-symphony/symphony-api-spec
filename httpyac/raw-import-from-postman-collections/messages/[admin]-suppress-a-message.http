@@ -1,0 +1,7 @@
+### [Admin] Suppress a message
+
+POST {{podUrl}}/pod/v1/admin/messagesuppression/id6/suppress
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+

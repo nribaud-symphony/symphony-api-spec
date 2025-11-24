@@ -1,0 +1,10 @@
+### RSA Session Auth
+
+# Bots Authentication - Session Authenticate
+# @import ./new-initial-jwt.http
+# @name session
+POST {{sessionAuthUrl}}/login/pubkey/authenticate
+Content-Type: application/json
+
+{"token":"{{jwt}}"}
+

@@ -1,0 +1,10 @@
+### [Admin] Update the avatar of a particular user
+
+POST {{podUrl}}/pod/v1/admin/user/119/avatar/update
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "image": "image36"
+}

@@ -1,0 +1,35 @@
+### [Admin] Update an app
+
+POST {{podUrl}}/pod/v1/admin/app/id46/update
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "applicationInfo": {
+    "appId": "appId6",
+    "name": "name6",
+    "appUrl": "appUrl6",
+    "domain": "domain6",
+    "publisher": "publisher6"
+  },
+  "iconUrl": "iconUrl6",
+  "description": "description6",
+  "allowOrigins": "allowOrigins6",
+  "permissions": [
+    "permissions6"
+  ],
+  "cert": "cert6",
+  "authenticationKeys": {
+    "current": {
+      "key": "key6",
+      "expirationDate": 16,
+      "action": "action6"
+    },
+    "previous": {
+      "key": "key6",
+      "expirationDate": 16,
+      "action": "action6"
+    }
+  }
+}

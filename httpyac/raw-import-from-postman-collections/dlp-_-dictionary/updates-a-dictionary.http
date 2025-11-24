@@ -1,0 +1,11 @@
+### Updates a dictionary
+
+PUT {{agentUrl}}/agent/v1/dlp/dictionaries/dictId31
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "name44"
+}

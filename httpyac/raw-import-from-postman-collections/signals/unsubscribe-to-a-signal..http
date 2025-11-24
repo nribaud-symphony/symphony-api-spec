@@ -1,0 +1,11 @@
+### Unsubscribe to a Signal.
+
+POST {{agentUrl}}/agent/v1/signals/id31/unsubscribe
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  81
+]

@@ -1,0 +1,11 @@
+### Cert KeyMan Auth
+
+POST {{certKeyManAuthUrl}}/keyauth/v1/authenticate
+Content-Type: application/json
+
+{"token":"{{jwt}}"}
+
+{{
+// TODO: Fixup Postman test script
+// pm.environment.set("keyManToken", pm.response.json().token);
+}}

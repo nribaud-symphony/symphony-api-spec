@@ -1,0 +1,11 @@
+### [Admin] Update the delegates assigned to a user
+
+POST {{podUrl}}/pod/v1/admin/user/119/delegates/update
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "userId": 94,
+  "action": "ADD"
+}

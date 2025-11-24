@@ -1,0 +1,7 @@
+### Delete a presence status feed.
+
+POST {{podUrl}}/pod/v1/presence/feed/feedId6/delete
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+

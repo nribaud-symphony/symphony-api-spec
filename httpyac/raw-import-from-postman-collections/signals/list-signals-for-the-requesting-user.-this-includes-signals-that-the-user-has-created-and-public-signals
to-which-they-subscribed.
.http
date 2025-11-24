@@ -1,0 +1,10 @@
+### List signals for the requesting user. This includes signals that the user has created and public signals
+to which they subscribed.
+
+
+GET {{agentUrl}}/agent/v1/signals/list
+    ?skip=81
+    &limit=81
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json

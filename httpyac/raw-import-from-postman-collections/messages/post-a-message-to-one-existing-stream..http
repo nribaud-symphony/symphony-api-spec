@@ -1,0 +1,8 @@
+### Post a message to one existing stream.
+
+POST {{agentUrl}}/agent/v4/stream/sid/message/create
+sessionToken: {{sessionToken}}
+keyManagerToken: {{keyManToken}}
+Accept: application/json
+Content-Type: application/json
+

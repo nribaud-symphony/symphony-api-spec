@@ -1,0 +1,5 @@
+### [Admin] Get the delegates assigned to a user
+
+GET {{podUrl}}/pod/v1/admin/user/119/delegates
+sessionToken: {{sessionToken}}
+Accept: application/json

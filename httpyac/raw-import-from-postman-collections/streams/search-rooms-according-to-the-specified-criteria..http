@@ -1,0 +1,28 @@
+### Search rooms according to the specified criteria.
+
+POST {{podUrl}}/pod/v3/room/search
+    ?skip=0
+    &limit=32
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+{
+  "query": "query36",
+  "labels": [
+    "labels36"
+  ],
+  "active": false,
+  "private": false,
+  "owner": {
+    "id": 94
+  },
+  "creator": {
+    "id": 94
+  },
+  "member": {
+    "id": 94
+  },
+  "sortOrder": "BASIC",
+  "subType": "subType36"
+}

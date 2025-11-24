@@ -1,0 +1,16 @@
+### [Admin] Update the application entitlements for the company
+
+POST {{podUrl}}/pod/v1/admin/app/entitlement/list
+sessionToken: {{sessionToken}}
+Accept: application/json
+Content-Type: application/json
+
+[
+  {
+    "appId": "appId36",
+    "appName": "appName36",
+    "enable": false,
+    "listed": false,
+    "install": false
+  }
+]
