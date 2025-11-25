@@ -1,0 +1,7 @@
+o### Common Access JWT
+
+# @import ./rsa-session-auth.http
+# @ref session
+# @name idmToken
+POST {{podUrl}}/login/idm/tokens?scope=at2
+sessionToken: {{session.token}}
