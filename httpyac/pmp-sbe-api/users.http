@@ -24,6 +24,24 @@ curl 'https://supportportal.symphony.com/pod/1009/v1/users?page=0&size=40&sortFi
 
 # @import ./read-symphony-pmp-yaml.http
 # @name pmp_authorizations_per_environment
-GET https://supportportal.symphony.com/pod/1009/v1/users?page=0&size=40&sortField=firstName&sortDir=asc
+GET https://supportportal.symphony.com/pod/1009/v1/users?page=0&size=50&sortField=firstName&sortDir=asc
 Content-Type: application/json
 authorization: Bearer {{pmp_authorizations_per_environment[envName].authorization}}
+
+### List all users
+{{
+  exports.expression = {
+    page: 0,
+  };
+  exports.expression.page = 0;
+}}                                                                                                                                                                          
+
+# @import ./read-symphony-pmp-yaml.http
+# @name pmp_authorizations_per_environment
+# @loop while expression.page < 100
+# @ratelimit minIdleTime 100
+GET https://supportportal.symphony.com/pod/1009/v1/users?page={{expression.page++}}&size=50&sortField=firstName&sortDir=asc
+Content-Type: application/json
+authorization: Bearer {{pmp_authorizations_per_environment[envName].authorization}}
+
+>> ./.output/outputRedirection.json
